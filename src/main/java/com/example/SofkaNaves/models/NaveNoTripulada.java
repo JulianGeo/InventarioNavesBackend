@@ -15,5 +15,8 @@ public class NaveNoTripulada extends Nave {
     @Column(unique = true, nullable = false)
     private Integer id;
 
+    @Column(name = "DESTINO")
+    private String destino;
+
 }
 

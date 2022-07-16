@@ -13,7 +13,6 @@ public class Nave implements Serializable {
     private Double peso;
     private Double altura;
     private Double combustible;
-    private String destino;
     private String mision;
 
 }

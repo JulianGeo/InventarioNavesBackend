@@ -15,4 +15,7 @@ public class NaveTripulada extends Nave {
     @Column(unique = true, nullable = false)
     private Integer id;
 
+    @Column(name = "CAPACIDAD")
+    private Integer capacidad;
+
 }
