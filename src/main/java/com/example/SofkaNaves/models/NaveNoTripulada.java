@@ -1,21 +1,19 @@
 package com.example.SofkaNaves.models;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
+@Data
+@NoArgsConstructor
 @Table(name="NaveNoTripulada")
-public class NaveNoTripulada {
+public class NaveNoTripulada extends Nave {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private Integer id;
 
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 }
+
