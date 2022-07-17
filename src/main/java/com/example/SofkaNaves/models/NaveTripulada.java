@@ -10,12 +10,13 @@ import javax.persistence.*;
 @Table(name="NaveTripulada")
 public class NaveTripulada extends Nave {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(unique = true, nullable = false)
-    private Integer id;
-
     @Column(name = "CAPACIDAD")
     private Integer capacidad;
+
+    @Column(name = "DURACION_MOUNTH")
+    private Integer duracionMouth;
+
+    @Column(name = "DURACION_YEAR")
+    private Integer duracionYear;
 
 }

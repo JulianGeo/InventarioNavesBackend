@@ -10,11 +10,6 @@ import javax.persistence.*;
 @Table(name="NaveLanzadora")
 public class NaveLanzadora extends Nave{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(unique = true, nullable = false)
-    private Integer id;
-
     @Column(name = "CARGA")
     private Integer carga;
 
@@ -23,5 +18,8 @@ public class NaveLanzadora extends Nave{
 
     @Column(name = "POTENCIA")
     private Integer potencia;
+
+    @Column(name = "REUTILIZABLE")
+    private Boolean reuttilizable;
 
 }

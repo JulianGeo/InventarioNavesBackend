@@ -1,8 +1,7 @@
 package com.example.SofkaNaves.repositories;
 
 import com.example.SofkaNaves.models.NaveLanzadora;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface NaveLanzadoraRepository extends CrudRepository<NaveLanzadora, Integer> {
+public interface NaveLanzadoraRepository extends JpaRepository<NaveLanzadora, Long> {
 }

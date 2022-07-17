@@ -1,9 +1,7 @@
 package com.example.SofkaNaves.repositories;
 
 import com.example.SofkaNaves.models.NaveTripulada;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-
-public interface NaveTripuladaRepository extends CrudRepository <NaveTripulada, Integer> {
+public interface NaveTripuladaRepository extends JpaRepository<NaveTripulada, Long> {
 }
