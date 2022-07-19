@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "bdb89918-d91d-4a5f-90fd-b089c3d49ffe",
+		"name": "navesSoftka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13750199"
+	},
+	"item": [
+		{
+			"name": "addnave",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"tipoNave\": 1,\r\n        \"nombre\": \"nombre\",\r\n        \"peso\": 222.222,\r\n        \"altura\": 22.22,\r\n        \"combustible\": 2.0,\r\n        \"mision\": \"mision\",\r\n        \"destino\": \"destino\",\r\n        \"paraInvestigacion\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addnave",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addnave"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allNaves",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/allNaves",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"allNaves"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
